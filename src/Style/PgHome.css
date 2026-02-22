@@ -1,0 +1,505 @@
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  height: 12vh;
+  top: 10px;
+  width: 80vw;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.519);
+  color: white;
+  border-radius: 20px;
+  z-index: 3;
+}
+.car-banner {
+   height: 30vh;
+   width: 80%;
+   margin: 10px auto;
+   /* background: url("/public/BG#.jpg") center/cover no-repeat; */
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   text-align: center;
+   color:#2aaf9b;
+}
+
+
+
+.banner-content h1 {
+   font-size: 48px;
+   color: black;
+}
+
+.banner-content button {
+   padding: 12px 25px;
+   border: none;
+   margin-top: 40px;
+   background: #00bcd4;
+   color: white;
+   cursor: pointer;
+}
+#title{
+font-size: 60px;
+}
+#navabar{
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+}
+.navbar .UL1{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.navbar .UL2{
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .UL1 li{
+  list-style: none;
+}
+
+.navbar .UL1 li a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right{
+  width: 20%;
+  display: flex;
+  gap: 30px;
+}
+
+.download-btn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  height: fit-content;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dailogbox{
+  position: fixed;
+  width: 40vw;
+  height: 70vh;
+  z-index: 1;
+  top: 15vh;
+  font-weight: 600;
+  font-size: 20px;
+  right: 20px;
+background-color: rgba(241, 241, 241, 0.83);
+border-radius: 30px;
+color: white;
+animation: dailogboxapper 0.5s 1;
+
+
+}
+
+
+/* Stats */
+.stats {
+  margin: auto;
+  width: 80vw;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-top: 0.1px solid black;
+  border-left: 0.1px solid black;
+  border-right:0.1px solid black;
+  transform: translateY(-60px);
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 20px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 36px;
+  color: #2aaf9b;
+}
+
+
+              /* url("https://images.unsplash.com/photo-1502877338535-766e1452684a"); */
+
+/* CARS SECTION */
+.cars {
+  width: 100%;
+  transform: translateY(-50px);
+  padding: 5% 0;
+  text-align: center;
+}
+.cars h2{
+font-size: 50px;
+}
+.car-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+#card1,
+#card2,
+#card3{
+ background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #2aaf9b;
+  border-radius: 20px;
+}
+.card {
+  width: 30%;
+  padding: 5% 0;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+  width: 100%;
+  padding: 6% 0;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta button {
+  width: 20%;
+  padding: 2% 0;
+  background: red;
+  border: none;
+  color: white;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+/* Container with 40vw width */
+.navbar-container {
+    width: 40vw;
+    margin-top: 20px;
+}
+
+.card h3{
+  color: black;
+}
+
+
+#footerbtn{
+  border-radius: 0px;
+}
+/* Horizontal navbar */
+.navbar2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.UL3, .UL4{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* Links */
+.navbar2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.userid{
+  width: 50px;
+}
+
+.menu{
+  width: 30px;
+  background: transparent;
+  border: 0px;
+  color: white;
+  font-size: 26px;
+}
+
+
+
+/* Section */
+.f1-section {
+  margin: auto;
+  width: 80vw;
+  padding: 0px 10%;
+  text-align: center;
+  background: white;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.f1-section__title {
+  font-size: 45px;
+  margin-bottom: 40px;
+  color:black;
+}
+
+/* Grid */
+.f1-section__grid {
+  display: grid;
+  grid-template-columns: auto auto ;
+
+  gap: 50px;
+  justify-content: center;
+}
+
+/* Card */
+.f1-section__card {
+  background: black;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.f1-section__card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image wrapper to contain overflow */
+.f1-section__img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.f1-section__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* prevents stretching */
+  display: block;
+}
+
+/* Card Text */
+.f1-section__name {
+  margin: 15px 0 5px;
+}
+
+.f1-section__info {
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.f1-section__btn {
+  padding: 10px 20px;
+  border: none;
+  background: #2aaf9b;
+  color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.f1-section__btn:hover {
+  background: white;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .f1-section__grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .f1-section__card {
+    width: 90%;
+  }
+}
+
+@keyframes dailogboxapper {
+  from{
+transform: translateX(40vw) scale(0.5);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+
+
+@media screen and (max-width:800px) {
+  .logo{
+    width: 60px;
+  }
+  .navbar .UL1 {
+    display: none;
+  }
+
+  .navbar {
+    width: 90%;
+    justify-content: flex-start;
+    gap: 20px;
+    padding:10px 20px;
+  }
+
+  .nav-right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-right p{
+    font-size: 20px;
+  }
+
+
+
+}
+
+@media screen and (max-width:500px) {
+ 
+  .nav-right{
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar{
+    justify-content: space-between;
+    
+  }
+  .navbar .UL2{
+   display: none;
+  }
+    .navbar .UL2 button{
+      width: 60%;
+    }
+
+    .UL1{
+      display: flex;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+  .navbar .UL2 {
+    /* display: none; */
+    width: 20%;
+    min-width:fit-content;
+    gap: 5px;
+    padding: 0px 10px;
+    justify-content: space-between;
+  }
+  .nav-right{
+    min-width: fit-content;
+    justify-content: center;
+    gap: 10px;
+  }
+  .navbar{
+    justify-content: space-between;
+    width: 95%;
+  }
+
+.car-banner{
+    display: none;
+    height: 0px;
+  }
+  .f1-section{
+  transform: width 1s ease;
+  }
+
+  .f1-section__card:hover{
+width: 170%;
+z-index: 2;
+transform: translateX(-50px);
+  }
+}
+
+
+
+@media screen and (min-width:800px) {
+  .stats{
+    border-bottom: 1px solid black;
+    border-radius: 30px;
+    width: 40%;
+  }
+  .menu{
+    display: none;
+  }
+
+}

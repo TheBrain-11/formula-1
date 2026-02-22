@@ -1,0 +1,93 @@
+/* Full Screen Setup */
+.about-container {
+  width: 100%;
+  height: 500px;
+  box-shadow: inset 0px 100px 7000vh black;
+  color: black;
+  display: flex;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Glass Card */
+.about-card {
+  width: 400px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease forwards;
+  transform: translateY(40px);
+  opacity: 0;
+  max-height: 300px;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Animated Button */
+.cool-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(45deg, #000, #555);
+  transition: all 0.4s ease;
+}
+
+.cool-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #333, #000);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .about-card {
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    height: 100px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    margin: 30px 0px;
+    transition: height 0.2s ease;
+  }
+
+  .about-card:hover{
+    height: 300px;
+  }
+  .about-container{
+    grid-template-columns: auto;
+    height: fit-content;
+    gap: 0px;
+  }
+}
